@@ -1,27 +1,42 @@
-# Laravel PHP Framework
+# Latest Laravel Boilerplate
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Usage
+Simply clone this repo into your preferred folder:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+```
+git clone git@github.com:netpoe/Laravel.BP.git bp_Laravel5
+```
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+You can use the boileplate as it is, __however__ you may want to use the installation `bash` file located here:
 
-## Official Documentation
+[laravel-install file](https://github.com/netpoe/Bash-Installers/blob/master/laravel-install)
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+To take advantage of the whole boilerplate. 
 
-## Contributing
+## Using the laravel-install bash file
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+After having downloaded the `laravel-install` file, you must: 
 
-## Security Vulnerabilities
+- Place it under a folder written in your `$PATH`
+- Export a variable `$p` meaning _projects_ where the boilerplate must exist inside a `Laravel/` folder 
+- Have node and npm installed so the node_modules folder can be installed
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+By executing `laravel-install PROJECT_NAME DB_NAME`, this `bash` file will: 
 
-## License
+- Create a new Laravel installation 5+
+- Download a frontend development tool library [EBM](https://github.com/easyboxmodel/ebm) that includes: 
+  - Bootstrap 4
+  - Thoughtbot's Bourbon Sass library
+  - The EBM Sass mixins and helpers
+  - The EBM Gruntfile configuration to compile `.scss` files in the corresponding Laravel `resources` folder
+- Setup files that manage email validation, such as: 
+  - `app/Http/Controllers/RegistrationController.php`
+  - `database/migrations/bp_user-migration.php` 
+  - `app/Services/AppMailer.php`
+- Create a `resources/views/bp_layout.blade.php` file that can handle your global layout
+- Create a `resources/views/bp_welcome.blade.php` file that can handle your welcome page using the EBM
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+Happy coding.
+
+
