@@ -30,12 +30,17 @@ By executing `laravel-install PROJECT_NAME DB_NAME`, this `bash` file will:
   - The EBM Sass mixins and helpers
   - The EBM Gruntfile configuration to compile `.scss` files in the corresponding Laravel `resources` folder
 - Setup files that manage email validation, such as: 
+  - `app/User.php`
   - `app/Http/Controllers/RegistrationController.php`
-  - `database/migrations/bp_user-migration.php` 
+  - `database/migrations/bp_user-migration.php` (May replace the original users migration)
   - `app/Services/AppMailer.php`
-- Create a `resources/views/bp_layout.blade.php` file that can handle your global layout
-- Create a `resources/views/bp_welcome.blade.php` file that can handle your welcome page using the EBM
+- Create a `resources/views/bp_layout.blade.php` file that can replace your global layout
+- Create a `resources/views/bp_welcome.blade.php` file that can replace your welcome page using the EBM
 
+After the `laravel-install` command is finished, just do a `grunt` command in order to start watching the `.scss` files located in the `resources/assets/EBM/` directory
+
+No additional `php artisan key:generate` commands needed
+No additional `.env.example` files to be modified
 
 Happy coding.
 
