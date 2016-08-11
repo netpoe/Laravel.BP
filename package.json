@@ -1,0 +1,20 @@
+{
+  "name": "LaravelBP",
+  "title": "Easy Box Model Laravel Boilerplate",
+  "url": "http://soygus.com",
+  "author": "@MadeByGus",
+  "copyright": "2015",
+  "version": "2.1.0",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest",
+    "matchdep": "latest"
+  }
+}

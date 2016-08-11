@@ -1,0 +1,125 @@
+/*
+  Easy Box Model Imports
+  Last update: 01.06.15
+  Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
+	
+	Optional without Grunt:
+  sass --watch src/scss/style.scss:app/assets/css/style.css
+*/
+/*
+  EBM Variables
+*/
+/* 
+  Text in rem units
+  Used in text-control partials
+*/
+/* PROJECT ESPECIFIC FONTS */
+/*
+	EBM:Ref
+	Flexbox
+*/
+/*
+	EBM Global styles
+*/
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.site-wrapper,
+.site-content {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header {
+  border-bottom: 1px solid #F7F7F9;
+  background-color: white;
+}
+.header h1, .header h2, .header h3, .header h4, .header h5, .header h6,
+.header .h1, .header .h2, .header .h3, .header .h4, .header .h5, .header .h6,
+.header h1, .header h2, .header h3, .header h4, .header h5, .header h6, .header p, .header span, .header a, .header em, .header i, .header strong, .header li {
+  margin: 0;
+}
+.header .header-left, .header .header-center, .header .header-right {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+}
+.header .header-center {
+  text-align: center;
+}
+.header .header-right {
+  text-align: right;
+}
+.header .logo img {
+  width: 132px;
+  height: auto;
+}
+
+.footer {
+  background-color: #282828;
+}
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6,
+.footer .h1, .footer .h2, .footer .h3, .footer .h4, .footer .h5, .footer .h6,
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p, .footer span, .footer a, .footer em, .footer i, .footer strong, .footer li {
+  margin: 0;
+}
+.footer .row > div {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70px;
+}
+
+/*
+	Media queries
+*/
+
+/*# sourceMappingURL=style.css.map */
